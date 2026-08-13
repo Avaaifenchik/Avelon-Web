@@ -221,10 +221,7 @@ export default function AdminPage() {
     { id: "servers" as Tab, icon: Server, label: "Серверы" },
     { id: "plans" as Tab, icon: CreditCard, label: "Тарифы" },
     { id: "pterodactyl" as Tab, icon: Database, label: "Pterodactyl" },
-    { id: "vmmanager" as Tab, icon: Cloud, label: "VmManager" },
-    { id: "dedicated" as Tab, icon: HardDrive, label: "Дедики" },
-    { id: "domains" as Tab, icon: Globe, label: "Домены" },
-    { id: "storagebox" as Tab, icon: HardDrive, label: "StorageBox" },
+    { id: "storagebox" as Tab, icon: HardDrive, label: "S3" },
     { id: "status" as Tab, icon: Activity, label: "Статус" },
     { id: "smtp" as Tab, icon: Mail, label: "SMTP" },
     { id: "logs" as Tab, icon: FileText, label: "Логи" },
@@ -286,14 +283,11 @@ export default function AdminPage() {
       setVmConnected(data.connected)
       if (!data.connected && data.error) {
         setVmError(data.error)
-        notify.error('VMManager: ' + data.error)
-      } else if (data.connected) {
-        notify.success('VMManager подключён!')
       }
+
     } catch (e) {
       setVmConnected(false)
       setVmError(String(e))
-      notify.error('Ошибка проверки VMManager: ' + e)
     }
   }
 
