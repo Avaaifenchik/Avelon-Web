@@ -27,7 +27,6 @@ interface UserData {
 const services = [
   { name: "Minecraft", icon: Server, href: "/#pricing?type=game", type: "game" },
   { name: "Coding", icon: Code, href: "/#pricing?type=coding", type: "coding" },
-  { name: "VDS", icon: Cloud, href: "/#pricing?type=vds", type: "vds" },
 ]
 
 export function Navbar() {
@@ -91,7 +90,7 @@ export function Navbar() {
         <div className="flex items-center gap-2 sm:gap-6 rounded-xl sm:rounded-2xl border border-border bg-background/80 py-1.5 sm:py-2 px-3 sm:px-6 shadow-lg backdrop-blur-md">
           <Link href="/" className="flex items-center gap-1.5 sm:gap-2 hover:scale-105 transition-transform duration-200">
             <Logo className="size-5 sm:size-7 text-foreground" />
-            <span className="font-heading text-sm sm:text-lg font-bold tracking-tight text-foreground">Avelon</span>
+            <span className="font-heading text-sm sm:text-lg font-bold tracking-tight text-foreground">SaintProject</span>
           </Link>
 
           <div className="hidden items-center gap-1 md:flex">
@@ -128,7 +127,7 @@ export function Navbar() {
               )}
             </div>
             <a
-              href="https://dsc.gg/avelonmy"
+              href="https://discord.com/invite/Cx6cQKYGHr"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 rounded-xl px-3 py-2 text-sm text-muted-foreground transition-all duration-200 hover:bg-accent hover:text-foreground hover:scale-[1.02]"

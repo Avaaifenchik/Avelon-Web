@@ -183,7 +183,7 @@ function DocumentModal({ docId, onClose }: { docId: string; onClose: () => void 
     if (!content) return
     const printWindow = window.open('', '_blank')
     if (!printWindow) return
-    printWindow.document.write(`<!DOCTYPE html><html><head><title>${doc.title} - Avelon</title><style>body{font-family:'Times New Roman',serif;padding:40px 60px;max-width:800px;margin:0 auto}h1{text-align:center;font-size:18px}h3{font-size:13px;margin-top:16px}p{font-size:11px;line-height:1.5}</style></head><body><h1>${doc.title}</h1>${content.innerHTML}</body></html>`)
+    printWindow.document.write(`<!DOCTYPE html><html><head><title>${doc.title} - SaintProject</title><style>body{font-family:'Times New Roman',serif;padding:40px 60px;max-width:800px;margin:0 auto}h1{text-align:center;font-size:18px}h3{font-size:13px;margin-top:16px}p{font-size:11px;line-height:1.5}</style></head><body><h1>${doc.title}</h1>${content.innerHTML}</body></html>`)
     printWindow.document.close()
     printWindow.print()
   }

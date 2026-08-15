@@ -192,56 +192,7 @@ export default function StatusPage() {
               {/* Divider */}
               <div className="border-t border-border/50" />
 
-              {/* Routers section */}
-              <div>
-                <button
-                  onClick={() => setRoutersOpen(!routersOpen)}
-                  className="w-full flex items-center justify-between p-4 hover:bg-muted/30 transition-colors"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="size-8 rounded-lg bg-muted/50 flex items-center justify-center">
-                      <Router className="size-4 text-muted-foreground" />
-                    </div>
-                    <span className="font-medium text-foreground">Роутеры</span>
-                    <span className={`text-xs px-2 py-0.5 rounded-full ${
-                      routers.length === 0 
-                        ? 'bg-muted text-muted-foreground'
-                        : routersOnline === routers.length 
-                          ? 'bg-emerald-500/10 text-emerald-500' 
-                          : 'bg-red-500/10 text-red-500'
-                    }`}>
-                      {routers.length === 0 ? 'НЕТ' : routersOnline === routers.length ? 'АКТИВНЫ' : 'ПРОБЛЕМЫ'} {routersOnline}/{routers.length}
-                    </span>
-                  </div>
-                  <ChevronDown className={`size-5 text-muted-foreground transition-transform ${routersOpen ? 'rotate-180' : ''}`} />
-                </button>
-                
-                {routersOpen && (
-                  <div className="border-t border-border/50">
-                    {routers.map((status) => (
-                      <div key={status.id} className="flex items-center justify-between px-4 py-3 border-b border-border/50 last:border-b-0 hover:bg-muted/20 transition-colors">
-                        <div className="flex items-center gap-3">
-                          <span className="text-sm font-medium text-foreground">{status.name}</span>
-                          {status.responseTime && (
-                            <span className="text-xs text-muted-foreground">{status.responseTime}ms</span>
-                          )}
-                        </div>
-                        <div className="flex items-center gap-3">
-                          <span className="text-xs text-muted-foreground">{status.uptime.toFixed(1)}%</span>
-                          {status.isOnline ? (
-                            <CheckCircle2 className="size-4 text-emerald-500" />
-                          ) : (
-                            <XCircle className="size-4 text-red-500" />
-                          )}
-                        </div>
-                      </div>
-                    ))}
-                    {routers.length === 0 && (
-                      <div className="px-4 py-6 text-sm text-muted-foreground text-center">Нет роутеров</div>
-                    )}
-                  </div>
-                )}
-              </div>
+              {/* Routers section вырезано */}
 
               {/* Divider */}
               <div className="border-t border-border/50" />

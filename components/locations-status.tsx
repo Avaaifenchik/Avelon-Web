@@ -159,57 +159,7 @@ export function LocationsStatus() {
           {/* Divider */}
           <div className="border-t border-border/50" />
 
-          {/* Routers section */}
-          <div>
-            <button
-              onClick={() => setRoutersOpen(!routersOpen)}
-              className="w-full flex items-center justify-between p-3 sm:p-4 hover:bg-muted/30 transition-colors"
-            >
-              <div className="flex items-center gap-2 sm:gap-3">
-                <div className="size-7 sm:size-8 rounded-md sm:rounded-lg bg-muted/50 flex items-center justify-center">
-                  <Router className="size-3.5 sm:size-4 text-muted-foreground" />
-                </div>
-                <span className="font-medium text-sm sm:text-base text-foreground">Роутеры</span>
-                <span className={`text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 rounded-full ${
-                  routers.length === 0 
-                    ? 'bg-muted text-muted-foreground'
-                    : routersOnline === routers.length 
-                      ? 'bg-emerald-500/10 text-emerald-500' 
-                      : 'bg-red-500/10 text-red-500'
-                }`}>
-                  {routers.length === 0 ? 'НЕТ' : routersOnline === routers.length ? 'OK' : '!'} {routersOnline}/{routers.length}
-                </span>
-              </div>
-              <ChevronDown className={`size-4 sm:size-5 text-muted-foreground transition-transform ${routersOpen ? 'rotate-180' : ''}`} />
-            </button>
-            
-            {routersOpen && (
-              <div className="border-t border-border/50 divide-y divide-border/50 animate-in fade-in slide-in-from-top-2 duration-200">
-                {routers.map((status, index) => (
-                  <div 
-                    key={status.id} 
-                    className="flex items-center justify-between px-3 sm:px-4 py-2.5 sm:py-3 animate-in fade-in slide-in-from-left-2 duration-200"
-                    style={{ animationDelay: `${index * 30}ms` }}
-                  >
-                    <div className="flex items-center gap-2 sm:gap-3">
-                      <span className="text-xs sm:text-sm text-foreground">{status.name}</span>
-                      {status.responseTime && (
-                        <span className="text-[10px] sm:text-xs text-muted-foreground">{status.responseTime}ms</span>
-                      )}
-                    </div>
-                    {status.isOnline ? (
-                      <CheckCircle2 className="size-3.5 sm:size-4 text-emerald-500" />
-                    ) : (
-                      <XCircle className="size-3.5 sm:size-4 text-red-500" />
-                    )}
-                  </div>
-                ))}
-                {routers.length === 0 && (
-                  <div className="px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm text-muted-foreground">Нет роутеров</div>
-                )}
-              </div>
-            )}
-          </div>
+          {/* Routers section вырезано */}
 
           {/* Divider */}
           <div className="border-t border-border/50" />

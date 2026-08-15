@@ -68,14 +68,14 @@ export function FoldersAnimation() {
             visibleFolders[index] 
               ? "opacity-100 scale-100" 
               : "opacity-0 scale-75"
-          } ${selectedFolder === index ? "bg-white/20" : "bg-white/10"}`}
+          } ${selectedFolder === index ? "bg-orange-500/20" : "bg-orange-500/10"}`}
         >
           <img src="/folder.png" alt="Folder" className="h-7 w-auto drop-shadow-lg" />
           <span className="text-white/80 text-[7px] font-medium whitespace-nowrap">{folder.name}</span>
           
           {/* Context Menu */}
           {showContextMenu && selectedFolder === index && (
-            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 bg-slate-800 rounded-lg shadow-xl border border-white/10 py-1 px-1 z-20 min-w-[70px]">
+            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 bg-orange-950/90 rounded-lg shadow-xl border border-white/10 py-1 px-1 z-20 min-w-[70px]">
               <div className={`text-[8px] px-2 py-1 rounded ${isDeleting ? "bg-red-500/30 text-red-300" : "text-white/70"}`}>
                 Удалить
               </div>

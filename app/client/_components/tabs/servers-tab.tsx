@@ -232,7 +232,7 @@ export function ServersTab({
       <div className="max-w-5xl mx-auto pb-8 animate-in fade-in slide-in-from-bottom-4 duration-300">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="font-heading text-2xl font-bold text-foreground">Мои серверы</h1>
+          <h1 className="font-heading text-2xl font-bold text-foreground">Мои сервера</h1>
           <p className="text-sm text-muted-foreground">
             {totalServers > 0 
               ? `${totalServers} сервер${totalServers === 1 ? '' : totalServers < 5 ? 'а' : 'ов'}`
@@ -318,7 +318,7 @@ export function ServersTab({
               {(vdsServers.length > 0 || servers.filter(s => s.plan.category === 'CODING').length > 0) && (
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Server className="size-4" />
-                  <span>Игровые серверы ({servers.filter(s => s.plan.category !== 'CODING').length})</span>
+                  <span>Игровые сервера ({servers.filter(s => s.plan.category !== 'CODING').length})</span>
                 </div>
               )}
               {servers.filter(s => s.plan.category !== 'CODING').map((server) => {
@@ -345,7 +345,7 @@ export function ServersTab({
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Code className="size-4" />
-                <span>Coding серверы ({servers.filter(s => s.plan.category === 'CODING').length})</span>
+                <span>Coding сервера ({servers.filter(s => s.plan.category === 'CODING').length})</span>
               </div>
               {servers.filter(s => s.plan.category === 'CODING').map((server) => {
                 const isExpanded = expandedServerId === server.id
@@ -1044,7 +1044,7 @@ function ServerCard({ server, user, isExpanded, onToggle, onDeleteClick, onRenew
         <div className="flex items-center gap-2 shrink-0">
           {server.pterodactylIdentifier ? (
             <a 
-              href={`${process.env.NEXT_PUBLIC_PTERODACTYL_URL || 'https://control.yourdomain.ru'}/server/${server.pterodactylIdentifier}`}
+              href={`${process.env.NEXT_PUBLIC_PTERODACTYL_URL || 'https://control.saintproject.xyz'}/server/${server.pterodactylIdentifier}`}
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
@@ -1160,7 +1160,7 @@ function ServerCard({ server, user, isExpanded, onToggle, onDeleteClick, onRenew
             <div className="space-y-2">
               {server.pterodactylIdentifier && (
                 <a 
-                  href={`${process.env.NEXT_PUBLIC_PTERODACTYL_URL || 'https://control.yourdomain.ru'}/server/${server.pterodactylIdentifier}`}
+                  href={`${process.env.NEXT_PUBLIC_PTERODACTYL_URL || 'https://control.saintproject.xyz'}/server/${server.pterodactylIdentifier}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 rounded-lg bg-foreground py-2 text-sm font-medium text-background hover:bg-foreground/90 transition-colors duration-200"

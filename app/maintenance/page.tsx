@@ -77,44 +77,12 @@ export default function MaintenancePage() {
       {/* Bottom controls */}
       <div className="fixed bottom-4 left-4 z-50">
         <div className="flex items-center gap-2 p-2 rounded-xl bg-card/80 backdrop-blur-md border border-border shadow-lg">
-          {/* Theme toggle */}
-          <button
-            onClick={() => setTheme("light")}
-            className={`p-2 rounded-lg transition-all ${
-              mounted && theme === "light" 
-                ? "bg-amber-100 text-amber-600" 
-                : "text-slate-400 hover:text-slate-300 hover:bg-white/5"
-            }`}
-            title="Светлая тема"
-          >
-            <Sun className="size-5" />
-          </button>
-          <button
-            onClick={() => setTheme("dark")}
-            className={`p-2 rounded-lg transition-all ${
-              mounted && theme === "dark" 
-                ? "bg-slate-700 text-blue-300" 
-                : "text-slate-400 hover:text-slate-600 hover:bg-black/5"
-            }`}
-            title="Тёмная тема"
-          >
-            <Moon className="size-5" />
-          </button>
+          {/* Theme toggle вырезано*/}
 
           {/* Divider */}
           <div className="w-px h-6 bg-border mx-1" />
 
           {/* Color picker */}
-          {colors.map((color) => (
-            <button
-              key={color.value}
-              onClick={() => setActiveColor(color.value)}
-              className={`size-6 rounded-full ${color.bg} transition-all hover:scale-110 ${
-                activeColor === color.value ? `ring-2 ring-offset-2 ring-offset-background ring-white shadow-lg ${color.glow}` : ""
-              }`}
-              title={color.name}
-            />
-          ))}
         </div>
       </div>
 
@@ -127,7 +95,7 @@ export default function MaintenancePage() {
 
         <div className="flex items-center justify-center gap-2 mb-4">
           <Logo className="size-8 text-foreground" />
-          <span className="font-heading text-2xl font-bold text-foreground">Avelon</span>
+          <span className="font-heading text-2xl font-bold text-foreground">SaintProject</span>
         </div>
 
         <h1 className="text-2xl font-bold text-foreground mb-2">

@@ -5,6 +5,22 @@ import { useRouter, useSearchParams } from "next/navigation"
 import { Server, Cloud, Cpu, HardDrive, Database, Wifi, Code, Shield, RussianRuble, DollarSign, Euro, Lock, Zap, Flame, ArrowRight, LogIn } from "lucide-react"
 import { publicGamePlans } from "@/lib/public-plans"
 
+const CubeIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+    <polyline points="3.29 7 12 12 20.71 7" />
+    <line x1="12" y1="22" x2="12" y2="12" />
+  </svg>
+);
 
 const vdsPlansPromo = [
   { name: "PROMO-1", cpu: "AMD Ryzen 7 1700X PRO", vcpu: 1, ram: "2 ГБ", disk: "20 ГБ", diskType: "NVMe", network: "1 Гбит/с", location: "Germany", flag: "/de.png", price: 110 },
@@ -25,17 +41,15 @@ const vdsPlansStandard = [
 ]
 
 const codingPlans = [
-  { name: "Junior", icon: "code", vcpu: 2, ram: "4 ГБ", disk: "50 ГБ", kernelSupport: "full", port: "1 Гбит/с", price: 150 },
-  { name: "Middle", icon: "code", vcpu: 4, ram: "8 ГБ", disk: "100 ГБ", kernelSupport: "full", port: "1 Гбит/с", price: 300 },
-  { name: "Senior", icon: "code", vcpu: 6, ram: "16 ГБ", disk: "200 ГБ", kernelSupport: "full", port: "1 Гбит/с", price: 550 },
-  { name: "Lead", icon: "code", vcpu: 8, ram: "32 ГБ", disk: "400 ГБ", kernelSupport: "full", port: "1 Гбит/с", price: 900 },
-  { name: "Architect", icon: "code", vcpu: 12, ram: "64 ГБ", disk: "800 ГБ", kernelSupport: "full", port: "1 Гбит/с", price: 1500 },
+  { name: "CODE-1", icon: "code", vcpu: "25%", ram: "256 MБ", disk: "1 ГБ", kernelSupport: "full", port: "1 Гбит/с", price: 25 },
+  { name: "CODE-2", icon: "code", vcpu: "50%", ram: "512 MБ", disk: "2 ГБ", kernelSupport: "full", port: "1 Гбит/с", price: 50 },
+  { name: "CODE-3", icon: "code", vcpu: "100%", ram: "1 ГБ", disk: "3 ГБ", kernelSupport: "full", port: "1 Гбит/с", price: 100 },
+  { name: "CODE-4", icon: "code", vcpu: "150%", ram: "1.5 ГБ", disk: "4 ГБ", kernelSupport: "full", port: "1 Гбит/с", price: 150 },
+  { name: "CODE-5", icon: "code", vcpu: "200%", ram: "2 ГБ", disk: "5 ГБ", kernelSupport: "full", port: "1 Гбит/с", price: 200 },
 ]
 
 const currencies = {
   RUB: { symbol: "₽", rate: 1, icon: RussianRuble },
-  UAH: { symbol: "₴", rate: 0.45, icon: () => <span className="text-xs font-bold">₴</span> },
-  USD: { symbol: "$", rate: 0.011, icon: DollarSign },
   EUR: { symbol: "€", rate: 0.010, icon: Euro },
 }
 
@@ -247,16 +261,7 @@ export function Pricing() {
                 <Code className="size-3.5 sm:size-4" />
                 Coding
               </button>
-              <button
-                data-type="vds"
-                onClick={() => setPlanType("vds")}
-                className={`relative z-10 flex items-center gap-1 sm:gap-1.5 rounded-md px-2 sm:px-3 py-1.5 text-xs sm:text-sm font-medium whitespace-nowrap ${
-                  planType === "vds" ? "text-primary-foreground" : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                <Cloud className="size-3.5 sm:size-4" />
-                VDS
-              </button>
+
             </div>
 
             <div ref={currencyRef} className="relative flex rounded-lg border border-border/50 bg-card/50 p-1 self-start sm:self-auto">
@@ -350,11 +355,9 @@ export function Pricing() {
                 <div className="p-4 sm:p-5 pb-3 sm:pb-4">
                   <div className="flex items-center gap-3">
                     {planType === "game" && "mob" in plan ? (
-                      <img
-                        src={(plan as typeof gamePlans[0]).customImg || `https://mc-heads.net/head/${(plan as typeof gamePlans[0]).mob}`}
-                        alt={plan.name}
-                        className="size-11 sm:size-12 rounded-xl"
-                      />
+                      <div className="flex size-11 sm:size-12 items-center justify-center rounded-xl bg-muted/50">
+                        <CubeIcon className="size-5 sm:size-6 text-muted-foreground" />
+                      </div>
                     ) : planType === "coding" && "icon" in plan ? (
                       <div className="flex size-11 sm:size-12 items-center justify-center rounded-xl bg-muted/50">
                         {codingIcons[(plan as typeof codingPlans[0]).icon]}
@@ -456,22 +459,6 @@ export function Pricing() {
                       </>
                     )}
                   </div>
-
-                  {planType === "coding" && "kernelSupport" in plan && (
-                    <>
-                      <div className="h-px bg-border/30 my-2" />
-                      <div className="flex items-center justify-between text-xs sm:text-sm">
-                        <div className="flex items-center gap-2">
-                          <Code className="size-3.5 sm:size-4 text-muted-foreground" />
-                          <span className="text-muted-foreground">Поддержка</span>
-                        </div>
-                        <div className="flex gap-1.5 bg-muted/50 px-2 py-1 rounded-md">
-                          <img src="/nodejs.png" alt="Node.js" className="size-4" title="Node.js" />
-                          <img src="/python.png" alt="Python" className="size-4" title="Python" />
-                        </div>
-                      </div>
-                    </>
-                  )}
 
                   {/* Button */}
                   <div className="mt-3 sm:mt-4">

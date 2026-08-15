@@ -37,7 +37,7 @@ export function Footer() {
                 <Server className="size-4 sm:size-5 text-primary" />
               </div>
               <span className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
-                Avelon<span className="text-primary">.my</span>
+                SaintProject<span className="text-primary">.xyz</span>
               </span>
             </Link>
             <p className="mt-2 sm:mt-3 text-xs sm:text-sm leading-relaxed text-muted-foreground">
@@ -126,7 +126,7 @@ export function Footer() {
                 </div>
               </a>
               <a 
-                href="https://dsc.gg/avelonmy" 
+                href="https://discord.com/invite/Cx6cQKYGHr" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 sm:gap-3 rounded-lg border border-border/50 bg-card/50 p-2 sm:p-3 transition-all duration-200 hover:border-primary/30 hover:scale-[1.02]"
@@ -145,18 +145,9 @@ export function Footer() {
 
         <div className="mt-8 sm:mt-12 border-t border-border/30 pt-6 sm:pt-8">
           <div className="text-center text-[10px] sm:text-xs leading-relaxed text-muted-foreground">
-            <p>© 2025{currentYear > 2025 ? `-${currentYear}` : ''} yourdomain.ru. All Rights Reserved.</p>
-            <p className="mt-1.5 sm:mt-2">НПД Фиалковский Никита Максимович. ИНН 636705565800</p>
+            <p>© 2026{currentYear > 2025 ? `-${currentYear}` : ''} saintproject.xyz. All Rights Reserved.</p>
+            <p className="mt-1.5 sm:mt-2">Remaked by @.avaaifen</p>
             <p className="mt-2 sm:mt-3">
-              Сайт разработан{" "}
-              <a 
-                href="https://t.me/XEHKU" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-primary transition-colors"
-              >
-                @XEHKU
-              </a>
             </p>
           </div>
         </div>

@@ -46,7 +46,7 @@ export function AdminHeader({ activeTab, setActiveTab, searchQuery, setSearchQue
       <div className="flex items-center gap-1 rounded-2xl border border-border bg-background/80 px-2 py-2 shadow-lg backdrop-blur-md">
         <Link href="/" className="flex items-center gap-2 px-3">
           <Logo className="size-6 text-foreground" />
-          <span className="font-heading font-bold text-foreground hidden sm:block">Avelon</span>
+          <span className="font-heading font-bold text-foreground hidden sm:block">SaintProject</span>
         </Link>
         
         <div className="h-6 w-px bg-border mx-1" />

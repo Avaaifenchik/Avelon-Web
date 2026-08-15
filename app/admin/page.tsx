@@ -221,7 +221,6 @@ export default function AdminPage() {
     { id: "servers" as Tab, icon: Server, label: "Серверы" },
     { id: "plans" as Tab, icon: CreditCard, label: "Тарифы" },
     { id: "pterodactyl" as Tab, icon: Database, label: "Pterodactyl" },
-    { id: "storagebox" as Tab, icon: HardDrive, label: "S3" },
     { id: "status" as Tab, icon: Activity, label: "Статус" },
     { id: "smtp" as Tab, icon: Mail, label: "SMTP" },
     { id: "logs" as Tab, icon: FileText, label: "Логи" },
@@ -827,7 +826,7 @@ export default function AdminPage() {
         <div className="flex items-center gap-1 rounded-2xl border border-border bg-background/80 px-2 py-2 shadow-lg backdrop-blur-md">
           <Link href="/" className="flex items-center gap-2 px-3 hover:scale-105 transition-transform duration-200">
             <Logo className="size-6 text-foreground" />
-            <span className="font-heading font-bold text-foreground hidden sm:block">Avelon</span>
+            <span className="font-heading font-bold text-foreground hidden sm:block">SaintProject</span>
           </Link>
           
           <div className="h-6 w-px bg-border mx-1" />
@@ -2256,31 +2255,7 @@ export default function AdminPage() {
                   {/* Divider */}
                   <div className="border-t border-border/50" />
 
-                  {/* Routers section */}
-                  <div>
-                    <div className="flex items-center justify-between p-4 border-b border-border/50">
-                      <div className="flex items-center gap-3">
-                        <div className="size-8 rounded-lg bg-muted/50 flex items-center justify-center">
-                          <Zap className="size-4 text-muted-foreground" />
-                        </div>
-                        <span className="font-medium text-foreground">Роутеры</span>
-                        <span className={`text-xs px-2 py-0.5 rounded-full ${
-                          routersOnline === routerStatuses.length 
-                            ? 'bg-emerald-500/10 text-emerald-500' 
-                            : 'bg-red-500/10 text-red-500'
-                        }`}>
-                          {routersOnline === routerStatuses.length ? 'АКТИВНЫ' : 'ПРОБЛЕМЫ'} {routersOnline}/{routerStatuses.length}
-                        </span>
-                      </div>
-                    </div>
-                    
-                    <div className="divide-y divide-border/50">
-                      {routerStatuses.map((status) => <StatusItem key={status.id} status={status} />)}
-                      {routerStatuses.length === 0 && (
-                        <div className="px-4 py-6 text-sm text-muted-foreground text-center">Нет роутеров</div>
-                      )}
-                    </div>
-                  </div>
+                  {/* Routers section ВЫРЕЗАНО*/} 
 
                   {/* Divider */}
                   <div className="border-t border-border/50" />

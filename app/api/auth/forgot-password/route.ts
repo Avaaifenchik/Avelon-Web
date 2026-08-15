@@ -71,7 +71,7 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail({
       from: smtp.from || smtp.user,
       to: email,
-      subject: 'Восстановление пароля — Avelon',
+      subject: 'Восстановление пароля — SaintProject',
       html: `
         <!DOCTYPE html>
         <html>
@@ -88,7 +88,7 @@ export async function POST(request: NextRequest) {
                   <tr>
                     <td style="padding: 32px 32px 24px; text-align: center; border-bottom: 1px solid #262626;">
                       <div style="font-size: 28px; font-weight: 700; color: #ffffff; letter-spacing: -0.5px;">
-                        Avelon
+                        SaintProject
                       </div>
                       <div style="font-size: 12px; color: #666; margin-top: 4px; text-transform: uppercase; letter-spacing: 1px;">Хостинг</div>
                     </td>

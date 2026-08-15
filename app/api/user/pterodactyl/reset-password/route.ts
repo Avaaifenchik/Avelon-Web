@@ -3,7 +3,7 @@ import { getAuthUser } from "@/lib/auth"
 import { prisma } from "@/lib/db"
 import { generatePterodactylPassword, encryptPassword } from "@/lib/pterodactyl-password"
 
-const PTERODACTYL_URL = process.env.PTERODACTYL_URL || "https://control.yourdomain.ru"
+const PTERODACTYL_URL = process.env.PTERODACTYL_URL || "https://control.saintproject.xyz"
 const PTERODACTYL_API_KEY = process.env.PTERODACTYL_API_KEY
 
 export async function POST() {

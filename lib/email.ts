@@ -66,7 +66,7 @@ function getEmailTemplate(content: string): string {
           <!-- Logo -->
           <tr>
             <td style="padding-bottom:32px;text-align:center;">
-              <span style="font-size:24px;font-weight:700;color:#fff;letter-spacing:2px;">AVELON</span>
+              <span style="font-size:24px;font-weight:700;color:#fff;letter-spacing:2px;">SaintProject</span>
             </td>
           </tr>
           <!-- Content -->
@@ -78,7 +78,7 @@ function getEmailTemplate(content: string): string {
           <!-- Footer -->
           <tr>
             <td style="padding-top:24px;text-align:center;">
-              <span style="font-size:12px;color:#666;">© ${new Date().getFullYear()} Avelon</span>
+              <span style="font-size:12px;color:#666;">© ${new Date().getFullYear()} SaintProject</span>
             </td>
           </tr>
         </table>
@@ -139,7 +139,7 @@ export async function sendPasswordResetEmail(email: string, token: string): Prom
     await transporter.sendMail({
       from: smtp.from,
       to: email,
-      subject: 'Сброс пароля — Avelon',
+      subject: 'Сброс пароля — SaintProject',
       html: getEmailTemplate(content),
     })
 
@@ -165,7 +165,7 @@ export async function sendTestEmail(email: string): Promise<boolean> {
     await transporter.sendMail({
       from: smtp.from,
       to: email,
-      subject: 'Тест SMTP — Avelon',
+      subject: 'Тест SMTP — SaintProject',
       html: getEmailTemplate(content),
     })
 
@@ -259,7 +259,7 @@ export async function sendVdsDeletedEmail(
     await transporter.sendMail({
       from: smtp.from,
       to: email,
-      subject: `VDS ${data.serverName} удалён — Avelon`,
+      subject: `VDS ${data.serverName} удалён — SaintProject`,
       html: getEmailTemplate(content),
     })
 
@@ -359,7 +359,7 @@ export async function sendVdsCreatedEmail(
     await transporter.sendMail({
       from: smtp.from,
       to: email,
-      subject: `VDS ${data.serverName} создан — Avelon`,
+      subject: `VDS ${data.serverName} создан — SaintProject`,
       html: getEmailTemplate(content),
     })
 
@@ -428,7 +428,7 @@ export async function sendVdsReinstalledEmail(
     await transporter.sendMail({
       from: smtp.from,
       to: email,
-      subject: `ОС переустановлена на ${data.serverName} — Avelon`,
+      subject: `ОС переустановлена на ${data.serverName} — SaintProject`,
       html: getEmailTemplate(content),
     })
 
@@ -493,7 +493,7 @@ export async function sendVdsPasswordChangedEmail(
     await transporter.sendMail({
       from: smtp.from,
       to: email,
-      subject: `Пароль изменён на ${data.serverName} — Avelon`,
+      subject: `Пароль изменён на ${data.serverName} — SaintProject`,
       html: getEmailTemplate(content),
     })
 
@@ -559,7 +559,7 @@ export async function sendVmManagerAccountEmail(
     await transporter.sendMail({
       from: smtp.from,
       to: email,
-      subject: 'Доступ к VMManager — Avelon',
+      subject: 'Доступ к VMManager — SaintProject',
       html: getEmailTemplate(content),
     })
 
@@ -630,13 +630,13 @@ export async function sendServicePaymentConfirmationEmail(
       
       <p style="margin:0 0 16px;font-size:14px;color:#ccc;text-align:center;">Сервис будет готов в ближайшее время. Вы получите уведомление, когда он будет активирован.</p>
       
-      <p style="margin:0;font-size:13px;color:#666;text-align:center;">С уважением, Команда Avelon</p>
+      <p style="margin:0;font-size:13px;color:#666;text-align:center;">С уважением, Команда SaintProject</p>
     `
 
     await transporter.sendMail({
       from: smtp.from,
       to: email,
-      subject: `Оплата ${data.serviceName} подтверждена — Avelon`,
+      subject: `Оплата ${data.serviceName} подтверждена — SaintProject`,
       html: getEmailTemplate(content),
     })
 

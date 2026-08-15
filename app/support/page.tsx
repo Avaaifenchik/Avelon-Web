@@ -29,7 +29,7 @@ export default function SupportPage() {
             </a>
 
             <a 
-              href="https://dsc.gg/avelonmy"
+              href="https://discord.com/Cx6cQKYGHr"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col gap-4 rounded-2xl border border-border/50 bg-card/30 p-6 transition-all hover:border-indigo-500/30"
@@ -40,7 +40,7 @@ export default function SupportPage() {
               <div>
                 <h3 className="font-heading text-lg font-bold text-foreground">Discord</h3>
                 <p className="mt-1 text-sm text-muted-foreground">Присоединяйтесь к сообществу</p>
-                <p className="mt-2 text-sm text-indigo-500">dsc.gg/avelonmy</p>
+                <p className="mt-2 text-sm text-indigo-500">dsc.gg/saintproject</p>
               </div>
             </a>
 
@@ -58,7 +58,7 @@ export default function SupportPage() {
             <h2 className="font-heading text-2xl font-bold text-foreground">Что включает поддержка</h2>
             <div className="mt-6 space-y-4 text-sm text-muted-foreground">
               <div className="rounded-xl border border-green-500/30 bg-green-500/5 p-4">
-                <p className="font-medium text-green-600 dark:text-green-500">✓ Включено в поддержку:</p>
+                <p className="font-medium text-green-600 dark:text-green-500">Включено в поддержку:</p>
                 <ul className="mt-2 ml-4 list-disc space-y-1">
                   <li>Помощь с настройкой сервера</li>
                   <li>Решение технических проблем инфраструктуры</li>
@@ -68,7 +68,7 @@ export default function SupportPage() {
                 </ul>
               </div>
               <div className="rounded-xl border border-red-500/30 bg-red-500/5 p-4">
-                <p className="font-medium text-red-600 dark:text-red-500">✗ Не включено в поддержку:</p>
+                <p className="font-medium text-red-600 dark:text-red-500">Не включено в поддержку:</p>
                 <ul className="mt-2 ml-4 list-disc space-y-1">
                   <li>Настройка и отладка пользовательского ПО</li>
                   <li>Написание скриптов и плагинов</li>
