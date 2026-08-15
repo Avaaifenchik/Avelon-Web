@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
       },
     })
 
-    const resetUrl = `${process.env.NEXT_PUBLIC_URL || 'https://yourdomain.ru'}/reset-password?token=${token}`
+    const resetUrl = `${process.env.NEXT_PUBLIC_URL || 'https://saintproject.xyz'}/reset-password?token=${token}`
 
     await transporter.sendMail({
       from: smtp.from || smtp.user,
@@ -129,10 +129,10 @@ export async function POST(request: NextRequest) {
                   <tr>
                     <td style="padding: 24px 32px; background: #0f0f0f; border-top: 1px solid #262626; text-align: center;">
                       <p style="margin: 0; font-size: 12px; color: #525252;">
-                        © ${new Date().getFullYear()} Avelon. Все права защищены.
+                        © ${new Date().getFullYear()} SaintProject. Все права защищены.
                       </p>
                       <p style="margin: 8px 0 0; font-size: 11px; color: #404040;">
-                        <a href="https://yourdomain.ru" style="color: #666; text-decoration: none;">yourdomain.ru</a>
+                        <a href="https://saintproject.xyz" style="color: #666; text-decoration: none;">saintproject.xyz</a>
                       </p>
                     </td>
                   </tr>

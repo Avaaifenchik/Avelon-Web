@@ -194,7 +194,7 @@ export function SettingsTab({
                     <p className="text-sm text-muted-foreground truncate">{pteroAccount.email}</p>
                   </div>
                   <a
-                    href={process.env.NEXT_PUBLIC_PTERODACTYL_URL || 'https://control.yourdomain.ru'}
+                    href={process.env.NEXT_PUBLIC_PTERODACTYL_URL || 'https://control.saintproject.xyz'}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 rounded-xl bg-foreground px-4 py-2 text-sm font-medium text-background hover:bg-foreground/90 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"

@@ -80,7 +80,7 @@ export async function sendDiscordLog(data: DiscordLogData): Promise<void> {
     fields,
     timestamp: new Date().toISOString(),
     footer: {
-      text: 'Avelon Hosting',
+      text: 'SaintProject Logs',
     },
   }
 

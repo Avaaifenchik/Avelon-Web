@@ -59,11 +59,11 @@ const documentContents: Record<string, { title: string; content: React.ReactNode
     hasLogo: true,
     content: (
       <div className="space-y-6 text-sm leading-relaxed">
-        <p className="text-center font-bold">yourdomain.ru</p>
+        <p className="text-center font-bold">saintproject.xyz</p>
         <p className="text-center text-xs">НПД Фиалковский Никита Максимович. ИНН 636705565800</p>
         <div className="space-y-4">
           <h3 className="font-bold">1. ОБЩИЕ ПОЛОЖЕНИЯ</h3>
-          <p>1.1. Настоящая публичная оферта является официальным предложением сервиса Avelon заключить договор на оказание услуг хостинга.</p>
+          <p>1.1. Настоящая публичная оферта является официальным предложением сервиса Saintproject заключить договор на оказание услуг хостинга.</p>
           <p>1.2. Акцептом Оферты является оплата услуг Сервиса любым доступным способом.</p>
           <h3 className="font-bold">2. ПРЕДМЕТ ДОГОВОРА</h3>
           <p>2.1. Сервис предоставляет Пользователю услуги по аренде виртуальных игровых серверов.</p>
@@ -81,11 +81,11 @@ const documentContents: Record<string, { title: string; content: React.ReactNode
     hasLogo: true,
     content: (
       <div className="space-y-6 text-sm leading-relaxed">
-        <p className="text-center font-bold">yourdomain.ru</p>
+        <p className="text-center font-bold">saintproject.xyz</p>
         <p className="text-center text-xs">НПД Фиалковский Никита Максимович. ИНН 636705565800</p>
         <div className="space-y-4">
           <h3 className="font-bold">1. ОБЩИЕ ПОЛОЖЕНИЯ</h3>
-          <p>1.1. Настоящее Соглашение регулирует отношения между сервисом Avelon и пользователем услуг.</p>
+          <p>1.1. Настоящее Соглашение регулирует отношения между сервисом SaintProject и пользователем услуг.</p>
           <h3 className="font-bold">2. ПРЕДМЕТ СОГЛАШЕНИЯ</h3>
           <p>2.1. Сервис предоставляет услуги хостинга игровых серверов и VDS.</p>
           <h3 className="font-bold">3. ЗАПРЕЩЁННАЯ ДЕЯТЕЛЬНОСТЬ</h3>
@@ -99,7 +99,7 @@ const documentContents: Record<string, { title: string; content: React.ReactNode
     hasLogo: true,
     content: (
       <div className="space-y-6 text-sm leading-relaxed">
-        <p className="text-center font-bold">yourdomain.ru</p>
+        <p className="text-center font-bold">saintproject.xyz</p>
         <p className="text-center text-xs">НПД Фиалковский Никита Максимович. ИНН 636705565800</p>
         <div className="space-y-4">
           <h3 className="font-bold">1. СБОР ИНФОРМАЦИИ</h3>
@@ -115,7 +115,7 @@ const documentContents: Record<string, { title: string; content: React.ReactNode
     hasLogo: true,
     content: (
       <div className="space-y-6 text-sm leading-relaxed">
-        <p className="text-center font-bold">yourdomain.ru</p>
+        <p className="text-center font-bold">saintproject.xyz</p>
         <p className="text-center text-xs">НПД Фиалковский Никита Максимович. ИНН 636705565800</p>
         <div className="space-y-4">
           <h3 className="font-bold">1. УСЛОВИЯ ВОЗВРАТА</h3>
@@ -131,7 +131,7 @@ const documentContents: Record<string, { title: string; content: React.ReactNode
     hasLogo: true,
     content: (
       <div className="space-y-6 text-sm leading-relaxed">
-        <p className="text-center font-bold">yourdomain.ru</p>
+        <p className="text-center font-bold">saintproject.xyz</p>
         <p className="text-center text-xs">НПД Фиалковский Никита Максимович. ИНН 636705565800</p>
         <div className="space-y-4">
           <h3 className="font-bold">1. ГАРАНТИИ ДОСТУПНОСТИ</h3>
@@ -147,7 +147,7 @@ const documentContents: Record<string, { title: string; content: React.ReactNode
     hasLogo: true,
     content: (
       <div className="space-y-6 text-sm leading-relaxed">
-        <p className="text-center font-bold">yourdomain.ru</p>
+        <p className="text-center font-bold">saintproject.xyz</p>
         <p className="text-center text-xs">НПД Фиалковский Никита Максимович. ИНН 636705565800</p>
         <div className="space-y-4">
           <h3 className="font-bold">1. ПРЕДЕЛЫ ОТВЕТСТВЕННОСТИ</h3>
@@ -217,13 +217,13 @@ function DocumentModal({ docId, onClose }: { docId: string; onClose: () => void 
           <div className="mt-16 pt-8 border-t border-gray-300">
             <div className="grid grid-cols-2 gap-8">
               <div className="space-y-2">
-                <p className="font-bold text-xs">Директор Avelon</p>
+                <p className="font-bold text-xs">Директор SaintProject</p>
                 <p className="text-sm">Кирилл Рязанов</p>
                 <SignatureRyazanov />
                 <div className="w-32 border-t border-black" />
               </div>
               <div className="space-y-2">
-                <p className="font-bold text-xs">Директор Avelon</p>
+                <p className="font-bold text-xs">Директор SaintProject</p>
                 <p className="text-sm">Никита Фиалковский</p>
                 <SignatureFial />
                 <div className="w-32 border-t border-black" />
@@ -262,7 +262,7 @@ export default function DocsPage() {
       <div className="px-8 pt-32 pb-20 md:px-16 lg:px-24">
         <div className="mx-auto max-w-5xl">
           <h1 className="font-heading text-3xl font-bold text-foreground md:text-4xl">Документация</h1>
-          <p className="mt-4 text-muted-foreground">Официальные документы Avelon</p>
+          <p className="mt-4 text-muted-foreground">Официальные документы SaintProject</p>
           
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {documents.map((doc) => (
@@ -292,14 +292,14 @@ export default function DocsPage() {
                 <Building2 className="size-6 text-primary" />
               </div>
               <div>
-                <h2 className="font-heading text-xl font-bold text-foreground">yourdomain.ru</h2>
+                <h2 className="font-heading text-xl font-bold text-foreground">saintproject.xyz</h2>
                 <p className="text-sm text-muted-foreground">Хостинг игровых серверов</p>
               </div>
             </div>
             <div className="grid gap-6 md:grid-cols-2">
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p><span className="text-foreground font-medium">Email:</span> support@yourdomain.ru</p>
-                <p><span className="text-foreground font-medium">Abuse:</span> abuse@yourdomain.ru</p>
+                <p><span className="text-foreground font-medium">Email:</span> support@saintproject.xyz</p>
+                <p><span className="text-foreground font-medium">Abuse:</span> abuse@saintproject.xyz</p>
               </div>
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p><span className="text-foreground font-medium">Директора:</span> Кирилл Рязанов, Никита Фиалковский</p>

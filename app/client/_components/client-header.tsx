@@ -28,7 +28,7 @@ export function ClientHeader({ user, onLogout }: ClientHeaderProps) {
       <div className="flex items-center gap-6 rounded-2xl border border-border bg-background/80 py-2 px-6 shadow-lg backdrop-blur-md">
         <Link href="/" className="flex items-center gap-2 hover:scale-105 transition-transform duration-200">
           <Logo className="size-7 text-foreground" />
-          <span className="font-heading text-lg font-bold tracking-tight text-foreground">Avelon</span>
+          <span className="font-heading text-lg font-bold tracking-tight text-foreground">SaintProject</span>
         </Link>
 
         <div className="hidden items-center gap-1 sm:flex">

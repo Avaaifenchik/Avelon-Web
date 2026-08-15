@@ -451,7 +451,7 @@ export async function POST(request: NextRequest) {
       },
       pterodactyl: {
         password: pterodactylPassword,
-        panelUrl: process.env.NEXT_PUBLIC_PTERODACTYL_URL || 'https://control.yourdomain.ru',
+        panelUrl: process.env.NEXT_PUBLIC_PTERODACTYL_URL || 'https://control.saintproject.xyz',
         username: user.email
       }
     })

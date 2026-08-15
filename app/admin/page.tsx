@@ -2512,7 +2512,7 @@ export default function AdminPage() {
                       type="text"
                       value={smtpSettings.from}
                       onChange={(e) => setSmtpSettings({ ...smtpSettings, from: e.target.value })}
-                      placeholder="Avelon <noreply@yourdomain.ru>"
+                      placeholder="Saintproject <noreply@saintproject.xyz>"
                       className="w-full px-3 py-2 rounded-lg bg-accent border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                     />
                   </div>

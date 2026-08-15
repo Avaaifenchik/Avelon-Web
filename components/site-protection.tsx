@@ -7,7 +7,7 @@ export function SiteProtection() {
     // Console spam
     const spamConsole = () => {
       console.log(
-        "%cAvelon Protect hehe 🛡️",
+        "%cHeyy!! SP Protect 🛡️",
         "color: #a855f7; font-size: 20px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"
       )
     }

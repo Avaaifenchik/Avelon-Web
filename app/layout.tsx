@@ -15,8 +15,8 @@ const onest = Onest({ subsets: ["latin", "cyrillic"], variable: "--font-onest" }
 const inter = Inter({ subsets: ["latin", "cyrillic"], variable: "--font-inter" })
 
 export const metadata: Metadata = {
-  title: "Avelon",
-  description: "Быстрый и надёжный хостинг для ваших проектов",
+  title: "SaintProject.xyz",
+  description: "Быстрый и дешевый хостинг для ваших проектов.",
 }
 
 export default function RootLayout({

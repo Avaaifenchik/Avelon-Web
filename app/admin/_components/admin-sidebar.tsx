@@ -17,7 +17,7 @@ export function AdminSidebar({ activeTab, setActiveTab }: AdminSidebarProps) {
       <div className="p-4 border-b border-border">
         <Link href="/" className="flex items-center gap-2">
           <Logo className="size-8 text-foreground" />
-          <span className="font-heading font-bold text-xl text-foreground">Avelon</span>
+          <span className="font-heading font-bold text-xl text-foreground">SaintProject</span>
         </Link>
       </div>
       

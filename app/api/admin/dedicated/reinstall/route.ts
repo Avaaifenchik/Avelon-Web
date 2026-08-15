@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
           { name: '🔐 Root пароль', value: `\`${password}\``, inline: false },
         ],
         footer: {
-          text: 'Avelon Hosting • Dedicated Server Reinstall'
+          text: 'SaintProject Hosting • Dedicated Server Reinstall'
         },
         timestamp: new Date().toISOString(),
       }],

@@ -7,9 +7,9 @@ import { Logo } from "@/components/logo"
 import { Construction, ExternalLink, Sun, Moon, LayoutDashboard, Globe, Server } from "lucide-react"
 
 const links = [
-  { name: "Панель управления", url: "https://control.yourdomain.ru", icon: LayoutDashboard },
-  { name: "Главный сайт", url: "https://yourdomain.ru", icon: Globe },
-  { name: "VM Panel", url: "https://vm.yourdomain.ru", icon: Server },
+  { name: "Панель управления", url: "https://control.saintproject.xyz", icon: LayoutDashboard },
+  { name: "Главный сайт", url: "https://saintproject.xyz", icon: Globe },
+  { name: "VM Panel", url: "https://vm.saintproject.xyz", icon: Server },
 ]
 
 const colors = [

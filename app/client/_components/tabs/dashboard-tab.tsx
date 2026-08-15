@@ -194,7 +194,7 @@ export function DashboardTab({ user, servers, vdsServers = [] }: DashboardTabPro
                     </div>
                     {server.pterodactylIdentifier && (
                       <a 
-                        href={`${process.env.NEXT_PUBLIC_PTERODACTYL_URL || 'https://control.yourdomain.ru'}/server/${server.pterodactylIdentifier}`}
+                        href={`${process.env.NEXT_PUBLIC_PTERODACTYL_URL || 'https://control.saintproject.xyz'}/server/${server.pterodactylIdentifier}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="opacity-0 group-hover:opacity-100 size-8 rounded-lg bg-foreground/10 flex items-center justify-center hover:bg-foreground/20 transition-all"

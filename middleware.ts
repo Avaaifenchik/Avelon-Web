@@ -42,7 +42,7 @@ function addSecurityHeaders(response: NextResponse): NextResponse {
 
 export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://yourdomain.ru'
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://saintproject.xyz'
 
   if (
     pathname.startsWith('/_next') ||
@@ -114,7 +114,7 @@ export async function middleware(request: NextRequest) {
       if (origin) {
         const allowedOrigins = [
           baseUrl,
-          'https://yourdomain.ru',
+          'https://saintproject.xyz',
           'http://localhost:3000',
           'http://127.0.0.1:3000'
         ]

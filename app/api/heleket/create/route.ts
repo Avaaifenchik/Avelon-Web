@@ -4,7 +4,7 @@ import { createPayment } from "@/lib/heleket"
 import jwt from "jsonwebtoken"
 
 const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key"
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://yourdomain.ru"
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://saintproject.xyz"
 
 export async function POST(request: NextRequest) {
   try {
