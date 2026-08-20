@@ -101,30 +101,8 @@ export function Footer() {
           <div className="col-span-2 sm:col-span-1">
             <h4 className="mb-3 sm:mb-4 text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-muted-foreground">Связаться</h4>
             <div className="space-y-2 sm:space-y-3">
-              <a 
-                href="mailto:support@saintproject.xyz" 
-                className="flex items-center gap-2 sm:gap-3 rounded-lg border border-border/50 bg-card/50 p-2 sm:p-3 transition-all duration-200 hover:border-primary/30 hover:scale-[1.02]"
-              >
-                <div className="flex size-7 sm:size-8 items-center justify-center rounded-md sm:rounded-lg bg-primary/10">
-                  <Mail className="size-3.5 sm:size-4 text-primary" />
-                </div>
-                <div>
-                  <p className="text-[10px] sm:text-xs text-muted-foreground">Email</p>
-                  <p className="text-xs sm:text-sm text-foreground">support@saintproject.xyz</p>
-                </div>
-              </a>
-              <a 
-                href="mailto:abuse@saintproject.xyz" 
-                className="flex items-center gap-2 sm:gap-3 rounded-lg border border-border/50 bg-card/50 p-2 sm:p-3 transition-all duration-200 hover:border-primary/30 hover:scale-[1.02]"
-              >
-                <div className="flex size-7 sm:size-8 items-center justify-center rounded-md sm:rounded-lg bg-red-500/10">
-                  <ShieldAlert className="size-3.5 sm:size-4 text-red-500" />
-                </div>
-                <div>
-                  <p className="text-[10px] sm:text-xs text-muted-foreground">Abuse</p>
-                  <p className="text-xs sm:text-sm text-foreground">abuse@saintproject.xyz</p>
-                </div>
-              </a>
+            
+              
               <a 
                 href="https://discord.com/invite/Cx6cQKYGHr" 
                 target="_blank"
