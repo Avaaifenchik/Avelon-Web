@@ -21,6 +21,8 @@
 This project was developed by:
 - **XEHKU**
 - **WhyFucked** (Nikita Fialkovsky)
+Forked by:
+- **Avaaifen*
 
 During development, we utilized AI assistance from **Codex** to help with certain parts of the codebase.
 
@@ -61,6 +63,8 @@ During development, we utilized AI assistance from **Codex** to help with certai
 Этот проект был разработан:
 - **XEHKU**
 - **WhyFucked** (Никита Фиалковский)
+И форкнут
+- **Avaaifen** 
 
 При написании кода использовалась помощь ИИ **Codex** для некоторых частей кодовой базы.
 
