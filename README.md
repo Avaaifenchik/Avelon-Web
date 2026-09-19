@@ -18,14 +18,8 @@
 
 ### Development
 
-This project was developed by:
-- **XEHKU**
-- **WhyFucked** (Nikita Fialkovsky)'
+me
 
-Forked by:
-- **Avaaifen**
-
-During development, we utilized AI assistance from **Codex** to help with certain parts of the codebase.
 
 ### Payment Methods
 
@@ -61,14 +55,7 @@ During development, we utilized AI assistance from **Codex** to help with certai
 
 ### Разработка
 
-Этот проект был разработан:
-- **XEHKU**
-- **WhyFucked** (Никита Фиалковский)
-
-Форкнут:
-- **Avaaifen** 
-
-При написании кода использовалась помощь ИИ **Codex** для некоторых частей кодовой базы.
+я
 
 ### Платежные системы
 
